@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { BiMoviePlay } from "react-icons/bi";
 import Button from './Button';
+import image from '../Assets/580b57fcd9996e24bc43c529.png'
 
 export default function Header() {
     let Links =[
@@ -15,10 +15,12 @@ export default function Header() {
     <div className="shadow-md w-full fixed top-0 left-0">
         <div className="md:flex items-center justify-between py-4 md:px:10 px-7">
             <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-white">
-            <span className="text 3xl text-red-600 mr-1 pt-2">
-                <BiMoviePlay/>
+            <span className="text-xs">
+            <img 
+            className="h-12 w-40"
+            src={image} 
+            alt="logo" />
             </span>
-           Movies
             </div>
             <div onClick={()=>setOpen(!open)} className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden">
             <ion-icon name={open ? 'close':'menu'}></ion-icon>
