@@ -33,7 +33,7 @@ export default function Header() {
                 ))
             }
             <Button>
-                Get Started
+                Login
             </Button>
             </ul>
         </div>

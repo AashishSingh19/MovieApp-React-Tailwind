@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Components/Header';
 import Hero from './Components/Hero';
+import Login from './Components/Login';
 import Movies from './Components/Movies';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <Header/>
     <Hero/>
     <Movies/>
+    <Login/>
     </div>
     </>
   );
